@@ -318,11 +318,168 @@ const App = memo(() => {
 })
 ```
 
+### 6.useMemo
 
+> useMemo实际的目的也是为了进行性能的优化
 
+- useMemo返回的是一个memoized(记忆的)值
+- 在依赖不变的情况下,多次定义的时候,返回的值是相同的
 
+```jsx
+import React,{memo, useMemo, useState} from 'react'
+// 使用memo包裹函数组件, 当props没有发生变化,组件不会重新渲染
+const HelloWorld = memo((props) => {
+    console.log('HelloWorld渲染了')
+    return (
+      <div>Hello World</div>
+    )
+})
 
+function calcNumTotal(num) {
+  console.log("calcNumTotal被执行了");
+  let total = 0;
+  for (let i = 0; i < num; i++) {
+    total += i;
+  }
+  return total;
+}
 
+const App = memo((props) => {
+    const [count, setCount] = useState(0)
+    // 每次组件渲染calcNumTotal都会执行
+    // const result = calcNumTotal(count)
+    // 不依赖任何, count始终是0
+    // const result = useMemo(() => calcNumTotal(count), [])
+    const result = useMemo(() => calcNumTotal(count), [count])
+    const info = useMemo(() => ({ name: 'ross', age: 18 }))
+    const [message, setMessage] = useState('Hello React')
+    return (
+      <div>
+        <h2>App</h2>  
+        <Hello World result={result} info={info} />
+        <button onClick={e => setCount(count + 1)}>+1</button>
+        <h2>{message}</h2>
+        <button onClick={e => setMessage('Hello')}>change message</button>
+      </div>
+    )
+})
+```
+
+- useMemo 与 useCallback
+
+```js
+// 下面useCallback和useMemo实现的效果一样
+const increment1 = useCallback(fn, [])
+const increment2 = useMemo(() => fn, [])
+```
+
+### 7.useRef
+
+> useRef返回一个ref对象,返回的ref对象在组件的整个生命周期保持不变
+
+- 最常用的ref是两种方法
+  - 引入DOM(或者组件,但是需要是class组件)元素
+  - 保存一个数据,这个对象在整个生命周期中可以保持不变
+
+- 基本使用:
+
+```jsx
+import React,{memo, useRef} from 'react'
+const App = memo(props => {
+    const inputRef = useRef();
+    const focusHandle = () => {
+        // 通过ref.current获取DOM元素
+        inputRef.current.focus();
+    };
+    return (
+        <div>
+            <h2>App</h2>
+            <input ref={inputRef} />
+            <button onClick={focusHandle}>Focus</button>
+        </div>
+    );
+})
+```
+
+- 解决闭包陷阱
+
+```jsx
+import React, { memo, useRef } from 'react'
+let obj = null
+const App = memo((props) => {
+    const [count, setCount] = useState(0)
+    const nameRef = useRef()
+    console.log(obj === nameRef)
+    obj = nameRef
+
+    // 通过useRef解决闭包陷阱
+    const countRef = useRef()
+    countRef.current = count
+
+    const increment = useCallback(() => {
+        setCount(countRef.current + 1)
+    }, [])
+     return (
+       <div>
+             <h2>Hello World: {count}</h2>
+             <button onClick={e => setCount(count+1)}>+1</button>
+             <button onClick={increment}>+1</button>
+       </div>
+     )
+})
+```
+
+### 8.useImperativeHandle
+
+```jsx
+import React, {memo, useImperativeHandle, useRef, forwardRef} from 'react'
+const HelloWorld = memo(forwardRef((props, ref) => {
+    const inputRef = useRef()
+    useImperativeHandle(ref,() => {
+        // 返回暴露给父组件的事件
+        return {
+            focus() {
+                inputRef.current.focus()
+            },
+            setValue(value) {
+                inputRef.current.value = value
+            }
+        }
+    })
+    return (
+	  <input type="text" ref={inputRef} />
+    )
+}))
+const App = memo(props => {
+   const inputRef = useRef()
+   function changeHandle() {
+       inputRef.current.focus()
+       inputRef.current.setValue('哈哈')
+   }
+   return (
+     <div>
+       <HelloWorld ref={inputRef} />
+       <button onClick={changeHandle}>change</button>
+     </div>
+   )
+})
+```
+
+#### forwardRef
+
+- forwardRef将ref转发到子组件
+- 子组件拿到父组件中创建的ref,绑定到自己的某一个元素中
+- 直接暴露给父组件是有风险的,父组件可以拿到DOM后进行任意的操作,但是我们希望父组件只能操作我们暴露给父组件的事件,其他的并不希望它随意操作
+
+### 9.useLayoutEffect
+
+- useLayoutEffect与useEffect区别
+  - useEffect会在渲染的内容更新到DOM上后执行,不会阻塞DOM的更新
+  - useLayoutEffect会在渲染的内容更新到DOM上之前执行,会阻塞DOM的更新
+
+![image-20250212143148400](E:/home/%E7%AC%94%E8%AE%B0/images/image-20250212143148400.png)
+
+> 官方不推荐useLayoutEffect执行, 因为会阻塞DOM渲染
 
 
 
