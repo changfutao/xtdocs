@@ -1,0 +1,3 @@
+import comp from "E:/home/xtdocs/docs/.vuepress/.temp/pages/typescript/void、never、any、unknown类型.html.vue"
+const data = JSON.parse("{\"path\":\"/typescript/void%E3%80%81never%E3%80%81any%E3%80%81unknown%E7%B1%BB%E5%9E%8B.html\",\"title\":\"void、never、any、unknown类型\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"void类型\",\"slug\":\"void类型\",\"link\":\"#void类型\",\"children\":[]}],\"git\":{\"updatedTime\":1740039206000,\"contributors\":[{\"name\":\"changfutao\",\"username\":\"changfutao\",\"email\":\"changfutao@126.com\",\"commits\":1,\"url\":\"https://github.com/changfutao\"}]},\"filePathRelative\":\"typescript/void、never、any、unknown类型.md\"}")
+export { comp, data }

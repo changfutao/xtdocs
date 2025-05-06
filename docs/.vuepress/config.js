@@ -13,7 +13,10 @@ export default defineUserConfig({
       },
       {
         text: "前端",
-        children: [{ text: "react", link: "/react/" }],
+        children: [
+          { text: "react", link: "/react/" },
+          { text: "go", link: "/go/" },
+        ],
       },
     ],
     sidebar: [
@@ -31,6 +34,12 @@ export default defineUserConfig({
           { text: "React中CSS的使用方式", link: "React中CSS的使用方式" },
           { text: "Redux使用", link: "Redux使用" },
         ],
+      },
+      {
+        text: "go",
+        prefix: "/go/",
+        link: "/go/",
+        children: [{ text: "基础语法", link: "基础语法" }],
       },
     ],
   }),

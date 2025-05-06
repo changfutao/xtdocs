@@ -1,0 +1,54 @@
+<template><div><h1 id="linux-ps命令" tabindex="-1"><a class="header-anchor" href="#linux-ps命令"><span>linux ps命令</span></a></h1>
+<blockquote>
+<p>ps命令是Linux中用于查看当前系统进程状态的工具。它可以显示正在运行的进程信息,如进程ID(PID)、CPU和内存使用情况、启动时间等。</p>
+</blockquote>
+<h2 id="基本语法" tabindex="-1"><a class="header-anchor" href="#基本语法"><span>基本语法</span></a></h2>
+<p>1.ps 查看当前终端关联进程</p>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token function">ps</span> <span class="token punctuation">[</span>选项<span class="token punctuation">]</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ul>
+<li>
+<p>-e: 显示所有进程</p>
+</li>
+<li>
+<p>-f: 显示完整格式的进程信息,包括UID、PID、PPID(父进程ID)、CPU使用率、启动时间、命令等</p>
+</li>
+<li>
+<p>-F: 显示更详细的进程信息,包括内存使用情况</p>
+</li>
+<li>
+<p>-u: 显示指定用户的进程</p>
+</li>
+<li>
+<p>-H: 以树状结构显示进程的父子关系</p>
+</li>
+<li>
+<p>-L: 显示进程的线程信息</p>
+</li>
+<li>
+<p>-o: 自定义输出字段</p>
+<ul>
+<li>pid: 进程ID</li>
+<li>ppid: 父进程ID</li>
+<li>cmd: 命令名称</li>
+<li>%cpu: CPU使用率</li>
+<li>%mem: 内存使用率</li>
+</ul>
+</li>
+<li>
+<p>实时刷新进程信息</p>
+<ul>
+<li>ps本身不支持实时刷新,但可以结合<code v-pre>watch</code>命令实现</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token function">watch</span> <span class="token parameter variable">-n</span> <span class="token number">1</span> <span class="token string">'ps -eo pid,ppid,cmd,%cpu,%mem'</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ul>
+<li>按CPU或内存排序</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token function">ps</span> <span class="token parameter variable">-eo</span> pid,ppid,cmd,%cpu.%mem <span class="token parameter variable">--sort</span><span class="token operator">=</span>-%cpu</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></div></template>
+
+

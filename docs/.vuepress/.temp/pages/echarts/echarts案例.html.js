@@ -1,0 +1,3 @@
+import comp from "E:/home/xtdocs/docs/.vuepress/.temp/pages/echarts/echarts案例.html.vue"
+const data = JSON.parse("{\"path\":\"/echarts/echarts%E6%A1%88%E4%BE%8B.html\",\"title\":\"echarts 案例\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"案例 1:\",\"slug\":\"案例-1\",\"link\":\"#案例-1\",\"children\":[]},{\"level\":2,\"title\":\"案例 2:\",\"slug\":\"案例-2\",\"link\":\"#案例-2\",\"children\":[]},{\"level\":2,\"title\":\"案例 3:\",\"slug\":\"案例-3\",\"link\":\"#案例-3\",\"children\":[]}],\"git\":{\"updatedTime\":1739263445000,\"contributors\":[{\"name\":\"changfutao\",\"username\":\"changfutao\",\"email\":\"changfutao@126.com\",\"commits\":1,\"url\":\"https://github.com/changfutao\"}]},\"filePathRelative\":\"echarts/echarts案例.md\"}")
+export { comp, data }

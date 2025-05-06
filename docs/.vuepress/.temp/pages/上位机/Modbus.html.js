@@ -1,0 +1,3 @@
+import comp from "E:/home/xtdocs/docs/.vuepress/.temp/pages/上位机/Modbus.html.vue"
+const data = JSON.parse("{\"path\":\"/%E4%B8%8A%E4%BD%8D%E6%9C%BA/Modbus.html\",\"title\":\"Modbus\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"1.特点\",\"slug\":\"_1-特点\",\"link\":\"#_1-特点\",\"children\":[]},{\"level\":2,\"title\":\"2.模式\",\"slug\":\"_2-模式\",\"link\":\"#_2-模式\",\"children\":[]},{\"level\":2,\"title\":\"3.Modbus不同存储区\",\"slug\":\"_3-modbus不同存储区\",\"link\":\"#_3-modbus不同存储区\",\"children\":[]},{\"level\":2,\"title\":\"4.Modbus学习工具\",\"slug\":\"_4-modbus学习工具\",\"link\":\"#_4-modbus学习工具\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"上位机/Modbus.md\"}")
+export { comp, data }

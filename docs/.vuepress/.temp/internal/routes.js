@@ -2,33 +2,46 @@ export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"我是第一个 markdown"} }],
+  ["/abp/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C.html", { loader: () => import(/* webpackChunkName: "abp_准备工作.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/abp/准备工作.html.js"), meta: {"title":"准备工作"} }],
+  ["/csharp_demo/CSV%E6%93%8D%E4%BD%9C.html", { loader: () => import(/* webpackChunkName: "csharp_demo_CSV操作.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/csharp_demo/CSV操作.html.js"), meta: {"title":"CSV操作"} }],
+  ["/echarts/echarts%E6%A1%88%E4%BE%8B.html", { loader: () => import(/* webpackChunkName: "echarts_echarts案例.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/echarts/echarts案例.html.js"), meta: {"title":"echarts 案例"} }],
+  ["/csharp/Linq%E5%AD%A6%E4%B9%A0.html", { loader: () => import(/* webpackChunkName: "csharp_Linq学习.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/csharp/Linq学习.html.js"), meta: {"title":"Linq学习"} }],
+  ["/csharp/Socket.html", { loader: () => import(/* webpackChunkName: "csharp_Socket.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/csharp/Socket.html.js"), meta: {"title":"Socket"} }],
+  ["/csharp/%E5%8F%8D%E5%B0%84.html", { loader: () => import(/* webpackChunkName: "csharp_反射.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/csharp/反射.html.js"), meta: {"title":"反射"} }],
+  ["/csharp/%E6%96%B0%E8%AF%AD%E6%B3%95.html", { loader: () => import(/* webpackChunkName: "csharp_新语法.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/csharp/新语法.html.js"), meta: {"title":"新语法"} }],
+  ["/efcore/%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95.html", { loader: () => import(/* webpackChunkName: "efcore_日志记录.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/efcore/日志记录.html.js"), meta: {"title":"日志记录"} }],
+  ["/go/Go%E5%88%9D%E4%BD%93%E9%AA%8C.html", { loader: () => import(/* webpackChunkName: "go_Go初体验.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/go/Go初体验.html.js"), meta: {"title":"Go初体验"} }],
+  ["/go/", { loader: () => import(/* webpackChunkName: "go_index.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/go/index.html.js"), meta: {"title":"README"} }],
+  ["/go/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.html", { loader: () => import(/* webpackChunkName: "go_基础语法.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/go/基础语法.html.js"), meta: {"title":"基础语法"} }],
+  ["/go/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85.html", { loader: () => import(/* webpackChunkName: "go_环境安装.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/go/环境安装.html.js"), meta: {"title":"环境配置"} }],
+  ["/linux/linux%20ps.html", { loader: () => import(/* webpackChunkName: "linux_linux ps.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/linux/linux ps.html.js"), meta: {"title":"linux ps命令"} }],
+  ["/linux/Linux%20%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B.html", { loader: () => import(/* webpackChunkName: "linux_Linux 压缩与解压.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/linux/Linux 压缩与解压.html.js"), meta: {"title":"Linux 压缩与解压"} }],
+  ["/linux/linux%E5%88%A0%E9%99%A4.html", { loader: () => import(/* webpackChunkName: "linux_linux删除.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/linux/linux删除.html.js"), meta: {"title":"linux删除"} }],
   ["/react/Fragment.html", { loader: () => import(/* webpackChunkName: "react_Fragment.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/Fragment.html.js"), meta: {"title":"Fragment"} }],
+  ["/react/JSX%E8%AF%AD%E6%B3%95.html", { loader: () => import(/* webpackChunkName: "react_JSX语法.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/JSX语法.html.js"), meta: {"title":"JSX语法"} }],
   ["/react/Portals.html", { loader: () => import(/* webpackChunkName: "react_Portals.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/Portals.html.js"), meta: {"title":"Portal"} }],
+  ["/react/react_hooks.html", { loader: () => import(/* webpackChunkName: "react_react_hooks.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/react_hooks.html.js"), meta: {"title":"react hooks"} }],
   ["/react/React%E4%B8%ADCSS%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F.html", { loader: () => import(/* webpackChunkName: "react_React中CSS的使用方式.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/React中CSS的使用方式.html.js"), meta: {"title":"React 中 CSS 的使用方式"} }],
   ["/react/React%E5%8A%A8%E7%94%BB.html", { loader: () => import(/* webpackChunkName: "react_React动画.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/React动画.html.js"), meta: {"title":"React 动画"} }],
+  ["/react/React%E5%9F%BA%E7%A1%80.html", { loader: () => import(/* webpackChunkName: "react_React基础.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/React基础.html.js"), meta: {"title":"React基础"} }],
   ["/react/", { loader: () => import(/* webpackChunkName: "react_index.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/index.html.js"), meta: {"title":""} }],
   ["/react/Redux%E4%BD%BF%E7%94%A8.html", { loader: () => import(/* webpackChunkName: "react_Redux使用.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/Redux使用.html.js"), meta: {"title":"redux"} }],
+  ["/react/Router.html", { loader: () => import(/* webpackChunkName: "react_Router.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/Router.html.js"), meta: {"title":""} }],
   ["/react/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F-StrictMode.html", { loader: () => import(/* webpackChunkName: "react_严格模式-StrictMode.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/严格模式-StrictMode.html.js"), meta: {"title":"严格模式-StrictMode"} }],
   ["/react/%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6%E5%92%8C%E9%9D%9E%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6.html", { loader: () => import(/* webpackChunkName: "react_受控组件和非受控组件.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/受控组件和非受控组件.html.js"), meta: {"title":"受控组件和非受控组件"} }],
-  ["/react/%E9%AB%98%E9%98%B6%E7%BB%84%E4%BB%B6.html", { loader: () => import(/* webpackChunkName: "react_高阶组件.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/高阶组件.html.js"), meta: {"title":"高阶组件"} }],
-  ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
   ["/react/%E9%9D%9E%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1_Context.html", { loader: () => import(/* webpackChunkName: "react_非父子组件通信_Context.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/非父子组件通信_Context.html.js"), meta: {"title":"非父子组件通信"} }],
-  ["/react/Router.html", { loader: () => import(/* webpackChunkName: "react_Router.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/Router.html.js"), meta: {"title":""} }],
+  ["/react/%E9%AB%98%E9%98%B6%E7%BB%84%E4%BB%B6.html", { loader: () => import(/* webpackChunkName: "react_高阶组件.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react/高阶组件.html.js"), meta: {"title":"高阶组件"} }],
+  ["/react_ts/%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html", { loader: () => import(/* webpackChunkName: "react_ts_项目构建.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/react_ts/项目构建.html.js"), meta: {"title":"项目构建"} }],
+  ["/redis/Redis.html", { loader: () => import(/* webpackChunkName: "redis_Redis.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/redis/Redis.html.js"), meta: {"title":"Redis"} }],
+  ["/sqlserver/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4.html", { loader: () => import(/* webpackChunkName: "sqlserver_数据库命令.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/sqlserver/数据库命令.html.js"), meta: {"title":"数据库命令"} }],
+  ["/wpf/Binding.html", { loader: () => import(/* webpackChunkName: "wpf_Binding.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/wpf/Binding.html.js"), meta: {"title":"Binding"} }],
+  ["/wpf/", { loader: () => import(/* webpackChunkName: "wpf_index.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/wpf/index.html.js"), meta: {"title":"WPF"} }],
+  ["/typescript/void%E3%80%81never%E3%80%81any%E3%80%81unknown%E7%B1%BB%E5%9E%8B.html", { loader: () => import(/* webpackChunkName: "typescript_void、never、any、unknown类型.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/typescript/void、never、any、unknown类型.html.js"), meta: {"title":"void、never、any、unknown类型"} }],
+  ["/typescript/%E5%86%85%E7%BD%AE%E7%B1%BB%E5%9E%8B.html", { loader: () => import(/* webpackChunkName: "typescript_内置类型.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/typescript/内置类型.html.js"), meta: {"title":"内置类型"} }],
+  ["/typescript/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C.html", { loader: () => import(/* webpackChunkName: "typescript_准备工作.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/typescript/准备工作.html.js"), meta: {"title":"准备工作"} }],
+  ["/%E4%B8%8A%E4%BD%8D/Modbus.html", { loader: () => import(/* webpackChunkName: "上位_Modbus.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/上位/Modbus.html.js"), meta: {"title":"Modbus"} }],
+  ["/%E4%B8%8A%E4%BD%8D%E6%9C%BA/Modbus.html", { loader: () => import(/* webpackChunkName: "上位机_Modbus.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/上位机/Modbus.html.js"), meta: {"title":"Modbus"} }],
+  ["/%E4%B8%8A%E4%BD%8D%E6%9C%BA/", { loader: () => import(/* webpackChunkName: "上位机_index.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/上位机/index.html.js"), meta: {"title":""} }],
+  ["/%E4%B8%8A%E4%BD%8D%E6%9C%BA/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html", { loader: () => import(/* webpackChunkName: "上位机_基础知识.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/上位机/基础知识.html.js"), meta: {"title":"基础知识"} }],
+  ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"E:/home/xtdocs/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}

@@ -1,0 +1,3 @@
+import comp from "E:/home/xtdocs/docs/.vuepress/.temp/pages/typescript/准备工作.html.vue"
+const data = JSON.parse("{\"path\":\"/typescript/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C.html\",\"title\":\"准备工作\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"1.安装依赖\",\"slug\":\"_1-安装依赖\",\"link\":\"#_1-安装依赖\",\"children\":[]},{\"level\":2,\"title\":\"2.创建项目\",\"slug\":\"_2-创建项目\",\"link\":\"#_2-创建项目\",\"children\":[]}],\"git\":{\"updatedTime\":1740039206000,\"contributors\":[{\"name\":\"changfutao\",\"username\":\"changfutao\",\"email\":\"changfutao@126.com\",\"commits\":1,\"url\":\"https://github.com/changfutao\"}]},\"filePathRelative\":\"typescript/准备工作.md\"}")
+export { comp, data }

@@ -1,0 +1,3 @@
+import comp from "E:/home/xtdocs/docs/.vuepress/.temp/pages/csharp_demo/CSV操作.html.vue"
+const data = JSON.parse("{\"path\":\"/csharp_demo/CSV%E6%93%8D%E4%BD%9C.html\",\"title\":\"CSV操作\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"1.安装\",\"slug\":\"_1-安装\",\"link\":\"#_1-安装\",\"children\":[]},{\"level\":2,\"title\":\"2.读\",\"slug\":\"_2-读\",\"link\":\"#_2-读\",\"children\":[]},{\"level\":2,\"title\":\"3.写\",\"slug\":\"_3-写\",\"link\":\"#_3-写\",\"children\":[]}],\"git\":{\"updatedTime\":1739263445000,\"contributors\":[{\"name\":\"changfutao\",\"username\":\"changfutao\",\"email\":\"changfutao@126.com\",\"commits\":1,\"url\":\"https://github.com/changfutao\"}]},\"filePathRelative\":\"csharp_demo/CSV操作.md\"}")
+export { comp, data }

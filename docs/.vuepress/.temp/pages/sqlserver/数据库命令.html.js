@@ -1,0 +1,3 @@
+import comp from "E:/home/xtdocs/docs/.vuepress/.temp/pages/sqlserver/数据库命令.html.vue"
+const data = JSON.parse("{\"path\":\"/sqlserver/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4.html\",\"title\":\"数据库命令\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"1.数据库表占用\",\"slug\":\"_1-数据库表占用\",\"link\":\"#_1-数据库表占用\",\"children\":[]},{\"level\":2,\"title\":\"2.索引大小\",\"slug\":\"_2-索引大小\",\"link\":\"#_2-索引大小\",\"children\":[]}],\"git\":{\"updatedTime\":1743651391000,\"contributors\":[{\"name\":\"changfutao\",\"username\":\"changfutao\",\"email\":\"changfutao@126.com\",\"commits\":1,\"url\":\"https://github.com/changfutao\"}]},\"filePathRelative\":\"sqlserver/数据库命令.md\"}")
+export { comp, data }

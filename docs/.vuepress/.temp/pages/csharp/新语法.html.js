@@ -1,0 +1,3 @@
+import comp from "E:/home/xtdocs/docs/.vuepress/.temp/pages/csharp/新语法.html.vue"
+const data = JSON.parse("{\"path\":\"/csharp/%E6%96%B0%E8%AF%AD%E6%B3%95.html\",\"title\":\"新语法\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"C# 10\",\"slug\":\"c-10\",\"link\":\"#c-10\",\"children\":[]},{\"level\":2,\"title\":\"C# 9\",\"slug\":\"c-9\",\"link\":\"#c-9\",\"children\":[]},{\"level\":2,\"title\":\"C# 8\",\"slug\":\"c-8\",\"link\":\"#c-8\",\"children\":[]}],\"git\":{\"updatedTime\":1739001322000,\"contributors\":[{\"name\":\"changfutao\",\"username\":\"changfutao\",\"email\":\"changfutao@126.com\",\"commits\":1,\"url\":\"https://github.com/changfutao\"}]},\"filePathRelative\":\"csharp/新语法.md\"}")
+export { comp, data }

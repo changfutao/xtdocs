@@ -1,0 +1,50 @@
+<template><div><h1 id="环境配置" tabindex="-1"><a class="header-anchor" href="#环境配置"><span>环境配置</span></a></h1>
+<p>环境变量: 操作系统运行环境中提前定义好的变量</p>
+<ul>
+<li>PATH: 如果在命令行中输入字符,shell要解析它,被解析为可执行的文件</li>
+</ul>
+<blockquote>
+<p>我们在命令行中输入go命令,当前操作系统(OS)环境中依赖于PATH指定的目录中去找可执行文件,window会优先搜索当前目录,当前目录没有才从PATH中指定的目录中找</p>
+</blockquote>
+<p>PATH： %USERPROFILE%\go\bin</p>
+<p>在命令行中输入<code v-pre>echo %USERProfile%</code>, 输出家目录</p>
+<p>window中打开家目录: 运行 -&gt;输入 <code v-pre>.</code></p>
+<blockquote>
+<p>在命令行中输入<code v-pre>set</code>可以输出环境变量信息</p>
+</blockquote>
+<ul>
+<li>
+<p>GOROOT: Go的安装路径, c:/go</p>
+</li>
+<li>
+<p>GOPATH</p>
+<ul>
+<li>当前用户家目录 /go ~/go $HOME/go</li>
+<li>目前第三方包安装目录</li>
+<li>bin: 第三方包通过go install命令下载并编译好的可执行文件,放在bin目录中
+<ul>
+<li>dlv: 调试go代码</li>
+<li>gopls: 实现语言服务器协议LSP, 具有构建格式化、自动完成等功能</li>
+<li>staticcheck 代码检查</li>
+</ul>
+</li>
+<li>pkg: 缓存 第三方包文件</li>
+<li>go install 命令: 下载第三方包到$GOPATH/go/下面的缓存包文件们到该目录,编译好可执行文件放到$GOPATH/go/bin下</li>
+<li>go get 命令: 下载第三方包到$GOPATH/go/下面的缓存包文件们到该目录,以后编程用这些包</li>
+</ul>
+</li>
+<li>
+<p>PATH</p>
+<ul>
+<li>~go/bin 等价于 GOPATH + bin</li>
+<li>bin: binary 二进制, 未来编译好的可执行文件的地方</li>
+</ul>
+</li>
+<li>
+<p>GOPROXY: https://mirrors.aliyun.com/goproxy/</p>
+</li>
+</ul>
+<p><a href="https://developer.aliyun.com/mirror/" target="_blank" rel="noopener noreferrer">阿里巴巴开源镜像站-OPSX镜像站-阿里云开发者社区</a></p>
+</div></template>
+
+
